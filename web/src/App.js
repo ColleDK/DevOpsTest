@@ -2,30 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          Hi, DevOps!
-        </h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn DevOps
-        </a>
-        <button>
-          Login
-        </button>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Greeting username={"Johnnay"}/>
+            <Greeting username={"Johnny boy"}/>
+            <Greeting username={"Johnson"}/>
+        </div>
+    );
+}
+
+const Greeting = ({username}) => {
+    return (<h1>Hello, {username}</h1>)
 }
 
 export default App;
