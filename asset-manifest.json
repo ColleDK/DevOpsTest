@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DevOpsTest/static/css/main.073c9b0a.css",
-    "main.js": "/DevOpsTest/static/js/main.511a2b9b.js",
+    "main.js": "/DevOpsTest/static/js/main.7fcde805.js",
     "static/js/787.d1d4a2c2.chunk.js": "/DevOpsTest/static/js/787.d1d4a2c2.chunk.js",
     "index.html": "/DevOpsTest/index.html",
     "main.073c9b0a.css.map": "/DevOpsTest/static/css/main.073c9b0a.css.map",
-    "main.511a2b9b.js.map": "/DevOpsTest/static/js/main.511a2b9b.js.map",
+    "main.7fcde805.js.map": "/DevOpsTest/static/js/main.7fcde805.js.map",
     "787.d1d4a2c2.chunk.js.map": "/DevOpsTest/static/js/787.d1d4a2c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.511a2b9b.js"
+    "static/js/main.7fcde805.js"
   ]
 }
