@@ -1,11 +1,14 @@
 import './App.css';
+import {useState} from "react";
 
 function App() {
+    const [username, setUsername] = useState("Brian")
     return (
         <div className="App">
-            <Greeting username={"Johnnay"}/>
-            <Greeting username={"Johnny boy"}/>
-            <Greeting username={"Johnson"}/>
+            <Greeting username={username}></Greeting>
+            <button onClick={ (e) => { setUsername("Johnnay") } }>
+                Skift navn
+            </button>
         </div>
     );
 }
