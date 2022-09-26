@@ -1,12 +1,24 @@
-import {makeObservable, observable} from "mobx";
+import {makeAutoObservable, makeObservable, observable, runInAction} from "mobx";
+
+const baseurl = process.env.NODE_ENV === 'development' ? "http://localhost:8080/" : ""
 
 class GiraffeStore {
     giraffes = ["Marius", "Melman"]
 
-    constructor() {
-        makeObservable(
+    constructor(props) {
+        makeAutoObservable(
             this,
-            {giraffes: observable},
+            {},
+            {autoBind:true}
+        )
+        this.fetchGiraffes()
+    }
+
+    fetchGiraffes(){
+        fetch(baseurl + "api/giraffes").then(
+            (response) => response.json().then(
+                (json) => runInAction(() => this.giraffes = json)
+            )
         )
     }
 
